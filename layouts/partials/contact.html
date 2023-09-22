@@ -1,0 +1,19 @@
+{{ with .Site.Params.contact }}
+    <section id="contact" class="wrapper style5">
+      <h2>{{ .title }}</h2>
+      <p>{{ .body }}</p>
+      <form method="post" action="https://formspree.io/f/{{ .formspree_form_id }}">
+        <div id="form">
+          <div id="userid">
+            <input class="fillable" type="text" id="name" value="" placeholder="Name (optional)" />
+            <input class="fillable" type="email" id="email" value="" placeholder="Email (optional)"/>
+          </div>
+          <textarea name="message" id="message" class="fillable" placeholder="Your message" required></textarea>
+          <div id="msgbutton">
+            <button id="send" type="submit">Send</button>
+            <button id="reset" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </section>
+{{ end }}

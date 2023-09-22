@@ -1,0 +1,6 @@
+{{ with .Site.Params.myspace }}
+    <section id="my-space">
+        <h2>{{ .title | safeHTML }}</h2>
+        <p>{{ .body | safeHTML }}</p>
+    </section>
+{{ end }}

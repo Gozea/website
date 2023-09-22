@@ -1,0 +1,14 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <ul id="main-menu">
+      <li>
+        <a href="{{ .Site.BaseURL }}">Le Salon</a>
+      </li>
+      {{ range .Site.Sections }}
+      <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

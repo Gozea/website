@@ -1,0 +1,12 @@
+<section id="blog-list">
+    {{ range .Site.Params.menu.main }}
+        <section class="subject hidden">
+            <a href={{ .url }}>
+                <div>
+                    <h2>{{ .name }}</h2>
+                    <p>{{ .description }}</p>
+                </div>
+            </a>
+        </section>
+    {{ end }}
+</section>

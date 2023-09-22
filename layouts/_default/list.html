@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+
+<main class="list-template">
+<h1>{{ .Title }}</h1>
+
+
+<p>{{ .Description }}</p>
+
+<div class="sections">
+{{ range .Sections }}
+    <a href="{{ .RelPermalink }}">
+        <article class="dir">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Description }}</p>
+        </article>
+    </a>
+{{ end }}
+</div>
+
+<div class="pages">
+{{ range .Paginator.Pages }}
+    <article class="blog-post">
+        <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+    </article>
+{{ end }}
+</div>
+
+</main>
+
+{{ partial "footer.html" . }}

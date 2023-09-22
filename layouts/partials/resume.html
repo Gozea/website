@@ -1,0 +1,20 @@
+{{ with .Site.Params.resume }}
+    <section id="resume">
+        <h2>{{ .title }}</h2>
+        <div class="resume-content">
+            <div class="charactersheet">
+                <h3>{{ .charactersheettext }}</h3>
+                <button id="sheet" class="hidden">
+                    <a href={{ .resumebuttonLink }}>{{ .resumebuttonText }}</a>
+                </button>
+            </div>
+            <div class="social">
+                <h3>{{ .socialtext }}</h3>
+                <div class="icons">
+                    <a class="fa-brands fa-github fa-2xl hidden" href={{ .github }}></a>
+                    <a class="fa-brands fa-linkedin fa-2xl hidden" href={{ .linkedin }}></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

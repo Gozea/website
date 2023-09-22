@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+
+<main class="single-template">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <a class="go-back" href={{ .Parent.Permalink }}>
+        <div class="fa-solid fa-arrow-turn-down fa-rotate-90"></div>
+        <div>{{ .Parent.Title }}</div>
+    </a>
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+
+    <div class="other-articles">
+        {{ with .PrevInSection }}
+            <a class="prev" href="{{ .Permalink }}">
+                <div class="fa-solid fa-arrow-left"></div>
+                <div>{{ .Params.Title }}</div>
+            </a>
+        {{ end }}
+        {{ with .NextInSection }}
+            <a class="next" href={{ .Permalink }}>
+                <div>{{ .Params.Title }}</div>
+                <div class="fa-solid fa-arrow-right"></div>
+            </a>
+        {{ end }}
+    </div>
+
+</main>
+
+{{ partial "footer.html" . }}
