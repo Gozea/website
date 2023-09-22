@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheatsheets on Gozea</title>
+    <link>https://example.org/lacabane/cheatsheets/</link>
+    <description>Recent content in Cheatsheets on Gozea</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Sep 2023 22:31:40 +0200</lastBuildDate><atom:link href="https://example.org/lacabane/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful git commands</title>
+      <link>https://example.org/lacabane/cheatsheets/gitcommands/</link>
+      <pubDate>Fri, 22 Sep 2023 13:30:06 +0200</pubDate>
+      
+      <guid>https://example.org/lacabane/cheatsheets/gitcommands/</guid>
+      <description>branching New branch
+git checkout -b &amp;lt;new-branch&amp;gt;
+push branch on remote
+git push -u origin &amp;lt;branch&amp;gt;
+switch branch
+git checkout &amp;lt;branch&amp;gt;
+history check old commits and get their hash
+git log
+go back in time (definitive)
+git reset --hard &amp;lt;commit-hash&amp;gt;
+go back in time
+git revert &amp;lt;commit-hash&amp;gt;
+stash stash your current uncommited edits and go back to last commit-hash
+git stash
+reapply stash
+git stash pop</description>
+    </item>
+    
+  </channel>
+</rss>
