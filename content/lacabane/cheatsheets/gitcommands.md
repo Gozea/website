@@ -5,6 +5,12 @@ date = 2023-09-22T13:30:06+02:00
 draft = false
 +++
 
+# remote
+
+Add new remote to local repository
+
+```git remote add new <remote-url>```
+
 ## branching
 
 New branch
