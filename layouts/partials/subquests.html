@@ -1,0 +1,18 @@
+{{ with .Site.Params.subquests }}
+    <section id="subquests">
+        <h2>{{ .title | safeHTML }}</h2>
+        <p>{{ .body | safeHTML }}</p>
+        <ul id="quest-list">
+            {{ range .sub }}
+                <a href="{{ .link }}">
+                    <li  class="hidden" style="background-image: url({{ .gif }}");>
+                        <div class="sub">
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .description }}</p>
+                        </div>
+                    </li>
+                </a>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}

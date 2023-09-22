@@ -1,4 +1,74 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Gozea'
-theme = "hugo-starter-theme"
+
+
+[params]
+fancyTitle = "Gozea" # title for frontpage, may include image
+copyright = "John Doe"
+description = 'Welcome here<br />Make yourself at home<br />'
+startbuttonText = "Add some decorations"
+startbuttonLink = "#"
+body_is_markdown = true 
+come = ""
+
+custom_css = ["css/style.css"]
+custom_js = ["js/app.js"]
+
+[params.menu]
+  [[params.menu.main]]
+    name = "Stories"
+    description = "Some personal stories to be shared"
+    url = "/lacabane/stories"
+    weight = 10
+
+  [[params.menu.main]]
+    name = "Cheatsheets"
+    description = "Each time I want to use these, I need to check again how to do so"
+    url = "/lacabane/cheatsheets"
+    weight = 20
+
+  [[params.menu.main]]
+    name = "Reference"
+    description = "Some useful resources about pretty much anything"
+    url = "/lacabane/references"
+    weight = 30
+
+[params.myspace]
+title = "What is this place"
+body = "I created this place as a personal space where I can write experiences, store project and share knowledge."
+
+[params.subquests]
+title = "Projects"
+body = "Some subquests I completed"
+
+  [[params.subquests.sub]]
+    title = "Raycaster"
+    description = "A simple raycaster in c++"
+    link = "https://github.com/Gozea/Raycaster"
+    gif = "gif/raycaster.gif"
+
+  [[params.subquests.sub]]
+    title = "Metaballs"
+    description = "Drawing metaballs using the marching square algorithm"
+    link = "https://github.com/Gozea/Metaballs"
+    gif = "gif/metaballs.gif"
+
+  [[params.subquests.sub]]
+    title = "Donut.cpp"
+    description = "The famous donut.c in C++ and with a controllable camera"
+    link = "https://github.com/Gozea/donutcpp"
+    gif = "gif/donutcpp.gif"
+
+[params.resume]
+title = "Want to meet with the owner ?"
+charactersheettext = "His character sheet is available here !"
+resumebuttonText = "Resume"
+resumebuttonLink = "/CV2023.pdf"
+socialtext = "Find my social media here"
+github = "https://github.com/Gozea"
+linkedin = "https://www.linkedin.com/in/rapha%C3%ABl-bournet-695a98183/"
+
+[params.contact]
+title = "Want to talk with the owner ?"
+body = "Whether you want to contact or even need a partner for your favorite game"
