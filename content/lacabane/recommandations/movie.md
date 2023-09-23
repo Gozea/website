@@ -1,6 +1,6 @@
 +++
-title = 'Gottafindajob'
-description = "how I'm proscrastinating by doing a website"
+title = 'Movies'
+description = "Movie recommandations"
 date = 2023-09-21T23:17:17+02:00
 draft = false
 +++
