@@ -32,3 +32,26 @@ function addDecoration() {
     e.style.top = Math.floor(Math.random()*100) + "%"
 }
 
+
+// Animation on hover
+
+const a_tags = document.querySelectorAll("a");
+a_tags.forEach((el) => {
+    el.addEventListener('mouseenter', function() {
+        el.classList.add("fa-fade");
+    });
+    el.addEventListener('mouseleave', function() {
+        el.classList.remove("fa-fade");
+    });
+});
+
+const button_tags = document.querySelectorAll("button");
+button_tags.forEach((el) => {
+    el.addEventListener('mouseenter', function() {
+        el.classList.add("fa-beat");
+    });
+    el.addEventListener('mouseleave', function() {
+        el.classList.remove("fa-beat");
+    });
+});
+

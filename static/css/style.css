@@ -316,7 +316,7 @@ ul {
 /* LISTS */
 
 .list-template {
-  background: linear-gradient(360deg, hsla(22, 46%, 20%, 1) 0%, hsla(130, 97%, 24%, 1) 100%);
+  background: #AAC5A8;
   margin: 0;
   padding: 4rem;
   min-height: 95%;
@@ -333,7 +333,7 @@ ul {
   }
 
 .list-template .dir {
-  background: linear-gradient(360deg, hsla(225, 78%, 59%, 1) 68%, hsla(97, 25%, 31%, 1) 100%);
+  background: #30011E;
   margin: 2em;
   padding: 1em;
   border-radius: 30px;
