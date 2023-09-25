@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Assistant');
 
 /* LAYOUT */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Assistant", sans-serif;
   height: 80vh;
   margin: 0;
   color: #fff;
@@ -315,8 +316,12 @@ ul {
 
 /* LISTS */
 
+.section-link {
+  text-decoration: none;
+}
+
 .list-template {
-  background: #AAC5A8;
+  background: #2e3842;
   margin: 0;
   padding: 4rem;
   min-height: 95%;
@@ -333,10 +338,11 @@ ul {
   }
 
 .list-template .dir {
-  background: #30011E;
+  background: #535a50;
   margin: 2em;
   padding: 1em;
-  border-radius: 30px;
+  border-radius: 5px;
+  box-shadow:  0 0 0 2px #fff
 }
 
 .blog-post h3 {
@@ -348,7 +354,7 @@ ul {
 
 
 .single-template {
-  background: black;
+  background: #2e3842;
   margin: 0;
   padding: 2%;
   min-height: 95%;

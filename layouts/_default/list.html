@@ -8,7 +8,7 @@
 
 <div class="sections">
 {{ range .Sections }}
-    <a href="{{ .RelPermalink }}">
+    <a class="section-link" href="{{ .RelPermalink }}">
         <article class="dir">
           <h2>{{ .Title }}</h2>
           <p>{{ .Description }}</p>
