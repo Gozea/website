@@ -1,3 +1,3 @@
 # website
 
-Personal website powered by Hugo (will be hosted later)
+Personal website using Hugo. Accessible from [here](https://gozea.netlify.app/)
