@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Assistant');
 
 /* LAYOUT */
@@ -39,6 +38,29 @@ ul {
   opacity: 1;
   transition: all 1s;
   filter: blur(0);
+}
+
+.scale-on-hover {
+  transform: scale(1);
+  transition: transform 0.2 ease;
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.4);
+}
+
+.gradient-on-hover {
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Initial background gradient */
+    background-size: 200% 100%;
+    transition: background 0.3s ease; /* Add a smooth transition */
+}
+
+.gradient-on-hover:hover {
+    background-position: right center;
+}
+
+.fade-on-hover:hover {
+    opacity: 0.3;
 }
 
 /* NAVIGATION */
@@ -98,7 +120,7 @@ ul {
 
 #banner .button {
     background-color: orange;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: inset 0 0 0 2px #fff;
     color: #fff;
     display: inline-block;
@@ -114,6 +136,8 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
+    transform: scale(1); 
+    transition: transform 0.3s ease; 
 }
 
 #banner .hidden {
@@ -122,6 +146,10 @@ ul {
 
 #banner .show {
     transform: translateY(0);
+}
+
+#banner .button:hover {
+    transform: scale(1.2);
 }
 
 /* MY-SPACE */ 
@@ -247,8 +275,8 @@ ul {
   text-transform: uppercase;
   overflow: hidden;
   margin-inline: 20em;
-  cursor: grab;
 }
+
 
 #resume a {
   text-decoration: none;
