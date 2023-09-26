@@ -4,7 +4,7 @@
     <p class="hidden">{{ .Site.Params.description | safeHTML }}</p>
     {{ if and .Site.Params.startbuttonText .Site.Params.startbuttonLink }}
 		<ul class="actions special">
-          <li><button  id="decoration" class="button gradient-on-hover" onclick="addDecoration()">{{ .Site.Params.StartbuttonText }}</li>
+          <li><button  id="decoration" class="button scale-on-hover gradient-on-hover" onclick="addDecoration()">{{ .Site.Params.StartbuttonText }}</li>
 		</ul>
     {{ end }}
 	</div>
