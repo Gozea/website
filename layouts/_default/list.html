@@ -9,7 +9,7 @@
 <div class="sections">
 {{ range .Sections }}
     <a class="section-link" href="{{ .RelPermalink }}">
-        <article class="dir">
+        <article class="dir fade-on-hover">
           <h2>{{ .Title }}</h2>
           <p>{{ .Description }}</p>
         </article>
@@ -19,7 +19,7 @@
 
 <div class="pages">
 {{ range .Paginator.Pages }}
-    <article class="blog-post">
+    <article class="blog-post fade-on-hover">
         <h3>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h3>
