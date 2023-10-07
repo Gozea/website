@@ -20,15 +20,19 @@ function get_random (list) {
   return list[Math.floor((Math.random()*list.length))];
 }
 
+const n_decorations = 3
+
 function addDecoration() {
     const banner = document.querySelector("#banner");
-    const e = document.createElement("div");
-    e.classList.add("fa-solid")
-    e.classList.add(get_random(iconList));
-    e.classList.add(get_random(animList));
-    banner.appendChild(e);
-    e.style.position = "absolute"
-    e.style.left = Math.floor(Math.random()*100) + "%"
-    e.style.top = Math.floor(Math.random()*100) + "%"
+    for (i = 0 ; i < n_decorations ; i += 1) {
+        const e = document.createElement("div");
+        e.classList.add("fa-solid")
+        e.classList.add(get_random(iconList));
+        e.classList.add(get_random(animList));
+        banner.appendChild(e);
+        e.style.position = "absolute"
+        e.style.left = Math.floor(Math.random()*100) + "%"
+        e.style.top = Math.floor(Math.random()*100) + "%"
+    }
 }
 

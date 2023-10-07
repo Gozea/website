@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recommandations on Gozea</title>
-    <link>https://example.org/lacabane/recommandations/</link>
+    <link>https://gozea.netlify.app/lacabane/recommandations/</link>
     <description>Recent content in Recommandations on Gozea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2023 17:07:24 +0200</lastBuildDate><atom:link href="https://example.org/lacabane/recommandations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Sep 2023 17:07:24 +0200</lastBuildDate><atom:link href="https://gozea.netlify.app/lacabane/recommandations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Games</title>
-      <link>https://example.org/lacabane/recommandations/games/</link>
+      <link>https://gozea.netlify.app/lacabane/recommandations/games/</link>
       <pubDate>Fri, 22 Sep 2023 17:07:24 +0200</pubDate>
       
-      <guid>https://example.org/lacabane/recommandations/games/</guid>
+      <guid>https://gozea.netlify.app/lacabane/recommandations/games/</guid>
       <description>Visual Novels Zero escape A trilogy. The two first games are some of the best visual novels I ever played. Reall well-written tension and characters.
 Danganronppa Really nice humours with some nice written investigations.
 Party games 100% Orange Juice Super fun and super random with friends</description>
     </item>
     
     <item>
-      <title>Gottafindajob</title>
-      <link>https://example.org/lacabane/recommandations/movie/</link>
+      <title>Movies</title>
+      <link>https://gozea.netlify.app/lacabane/recommandations/movie/</link>
       <pubDate>Thu, 21 Sep 2023 23:17:17 +0200</pubDate>
       
-      <guid>https://example.org/lacabane/recommandations/movie/</guid>
+      <guid>https://gozea.netlify.app/lacabane/recommandations/movie/</guid>
       <description>A few movies I liked
 Interstellar A classic now
 Dances with wolves I love Two Socks</description>
@@ -31,10 +31,10 @@ Dances with wolves I love Two Socks</description>
     
     <item>
       <title>Litterature</title>
-      <link>https://example.org/lacabane/recommandations/litterature/</link>
+      <link>https://gozea.netlify.app/lacabane/recommandations/litterature/</link>
       <pubDate>Thu, 21 Sep 2023 22:18:37 +0200</pubDate>
       
-      <guid>https://example.org/lacabane/recommandations/litterature/</guid>
+      <guid>https://gozea.netlify.app/lacabane/recommandations/litterature/</guid>
       <description>Honestly I&amp;rsquo;m not very knowledgeable when in comes to litterature but here that some books I read in school or in my personal time that I really liked
 Les Miserables Like all french middle schooler I had to read this book. Even though I read it as an assignement, I really liked it as a kid. Characters are great and a great story overall
 Of Mices and Men This one was also an assignement but I legitimately cried at the end of this book.</description>

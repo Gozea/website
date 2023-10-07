@@ -2,18 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheatsheets on Gozea</title>
-    <link>https://example.org/lacabane/cheatsheets/</link>
+    <link>https://gozea.netlify.app/lacabane/cheatsheets/</link>
     <description>Recent content in Cheatsheets on Gozea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 22:31:40 +0200</lastBuildDate><atom:link href="https://example.org/lacabane/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 22:31:40 +0200</lastBuildDate><atom:link href="https://gozea.netlify.app/lacabane/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tr</title>
+      <link>https://gozea.netlify.app/lacabane/cheatsheets/tr/</link>
+      <pubDate>Wed, 27 Sep 2023 15:10:54 +0200</pubDate>
+      
+      <guid>https://gozea.netlify.app/lacabane/cheatsheets/tr/</guid>
+      <description>Translate Replace characters from first field by mapped one in second field
+echo &amp;quot;h3ll0 w0rld&amp;quot; | tr &#39;30&#39; &#39;eo&#39; &amp;gt;hello world
+Change lower case to upper case
+echo &amp;quot;hello world&amp;quot; | tr &#39;[:lower:]&#39; &#39;[:upper:]&amp;quot; &amp;gt;HELLO WORLD
+Delete Delete all characters in the field
+echo &amp;quot;hetlloy wporlda&amp;quot; | tr -d &#39;typa&#39; &amp;gt;hello world
+Delete all characters except the ones in the field
+echo &amp;quot;hetlloy wporlda&amp;quot; | tr -cd &#39;helowrld&#39; &amp;gt;hello world</description>
+    </item>
+    
+    <item>
+      <title>cut</title>
+      <link>https://gozea.netlify.app/lacabane/cheatsheets/cut/</link>
+      <pubDate>Wed, 27 Sep 2023 14:59:19 +0200</pubDate>
+      
+      <guid>https://gozea.netlify.app/lacabane/cheatsheets/cut/</guid>
+      <description>Cutting characters in line Keep only characters 1 to 5 in lines of input
+cut -c 1-5 file
+Keep only characters until the 5th in line
+cut -c -5 file
+Field separator Keep only the 5th column
+cut -d &#39; &#39; -f5</description>
+    </item>
+    
+    <item>
+      <title>awk</title>
+      <link>https://gozea.netlify.app/lacabane/cheatsheets/awk/</link>
+      <pubDate>Wed, 27 Sep 2023 14:01:32 +0200</pubDate>
+      
+      <guid>https://gozea.netlify.app/lacabane/cheatsheets/awk/</guid>
+      <description>column manipulation Print the 1st 3rd and 5th columns in a file sucessfully
+awk &#39;{print $1 $3 $5}&#39; file
+Print the first column with &amp;ldquo;/&amp;rdquo; as separator
+awk -F &amp;quot;/&amp;quot; &#39;{print $1}&#39; file
+Print the last column
+awk &#39;{print $NF}&#39; file
+Pattern searching Print 2nd column on line where pattern is found
+awk &#39;/pattern/ {print $2}&#39; file
+Print 2nd column on line where pattern is found on 1st column
+awk &#39;$1 ~ /pattern/ {print $2} file</description>
+    </item>
+    
+    <item>
+      <title>sed</title>
+      <link>https://gozea.netlify.app/lacabane/cheatsheets/sed/</link>
+      <pubDate>Tue, 26 Sep 2023 18:14:19 +0200</pubDate>
+      
+      <guid>https://gozea.netlify.app/lacabane/cheatsheets/sed/</guid>
+      <description>Substitutions Substitute first pattern1 of each line by pattern2
+sed &#39;s/pattern1/pattern2/&#39; &amp;lt;originalfile &amp;gt;newfile
+Substitue ALL pattern1 by pattern 2
+sed &#39;s/pattern1/pattern2/g&#39; &amp;lt;originalfile &amp;gt;newfile
+subpatterns Apply substitution on line only on lines where patternA appears
+sed &#39;/patternA/s/pattern1/pattern2/&#39; &amp;lt;originalfile &amp;gt;newfile
+Flags Apply directly changes on file
+sed -i &#39;s/pattern1/pattern2/g&#39; file
+Chain commands
+sed -i -e &#39;s/pattern1/pattern2/g&#39; -e &#39;s/pattern3/pattern4/g&#39; file
+Deletion Delete line where pattern appear
+sed &#39;/pattern/d&#39;</description>
+    </item>
+    
     <item>
       <title>Useful git commands</title>
-      <link>https://example.org/lacabane/cheatsheets/gitcommands/</link>
+      <link>https://gozea.netlify.app/lacabane/cheatsheets/gitcommands/</link>
       <pubDate>Fri, 22 Sep 2023 13:30:06 +0200</pubDate>
       
-      <guid>https://example.org/lacabane/cheatsheets/gitcommands/</guid>
-      <description>branching New branch
+      <guid>https://gozea.netlify.app/lacabane/cheatsheets/gitcommands/</guid>
+      <description>remote Add new remote to local repository
+git remote add new &amp;lt;remote-url&amp;gt;
+branching New branch
 git checkout -b &amp;lt;new-branch&amp;gt;
 push branch on remote
 git push -u origin &amp;lt;branch&amp;gt;
@@ -25,10 +95,7 @@ go back in time (definitive)
 git reset --hard &amp;lt;commit-hash&amp;gt;
 go back in time
 git revert &amp;lt;commit-hash&amp;gt;
-stash stash your current uncommited edits and go back to last commit-hash
-git stash
-reapply stash
-git stash pop</description>
+stash stash your current uncommited edits and go back to last commit-hash</description>
     </item>
     
   </channel>

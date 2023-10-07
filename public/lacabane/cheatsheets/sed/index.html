@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>sed | Gozea</title>
+
+    
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    
+    
+    
+        <script defer src="/js/app.js"></script>
+    
+    <script src="https://kit.fontawesome.com/1888aefbfa.js" crossorigin="anonymous"></script>
+
+	</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <ul id="main-menu">
+      <li>
+        <a href="https://gozea.netlify.app/">Le Salon</a>
+      </li>
+      
+      <li>
+          <a href="https://gozea.netlify.app/lacabane/">La Cabane</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<main class="single-template">
+    <h1 class="title">sed</h1>
+
+    <a class="go-back" href=https://gozea.netlify.app/lacabane/cheatsheets/>
+        <div class="fa-solid fa-arrow-turn-down fa-rotate-90"></div>
+        <div>Cheatsheets</div>
+    </a>
+
+    <div class="article-content">
+        <h2 id="substitutions">Substitutions</h2>
+<p>Substitute first pattern1 of each line by pattern2</p>
+<p><code>sed 's/pattern1/pattern2/' &lt;originalfile &gt;newfile</code></p>
+<p>Substitue ALL pattern1 by pattern 2</p>
+<p><code>sed 's/pattern1/pattern2/g' &lt;originalfile &gt;newfile</code></p>
+<h2 id="subpatterns">subpatterns</h2>
+<p>Apply substitution on line only on lines where patternA appears</p>
+<p><code>sed '/patternA/s/pattern1/pattern2/' &lt;originalfile &gt;newfile</code></p>
+<h2 id="flags">Flags</h2>
+<p>Apply directly changes on file</p>
+<p><code>sed -i 's/pattern1/pattern2/g' file</code></p>
+<p>Chain commands</p>
+<p><code>sed -i -e 's/pattern1/pattern2/g' -e 's/pattern3/pattern4/g' file</code></p>
+<h2 id="deletion">Deletion</h2>
+<p>Delete line where pattern appear</p>
+<p><code>sed '/pattern/d'</code></p>
+
+    </div>
+
+    <div class="other-articles">
+        
+            <a class="prev" href="https://gozea.netlify.app/lacabane/cheatsheets/gitcommands/">
+                <div class="fa-solid fa-arrow-left"></div>
+                <div>Useful git commands</div>
+            </a>
+        
+        
+            <a class="next" href=https://gozea.netlify.app/lacabane/cheatsheets/awk/>
+                <div>awk</div>
+                <div class="fa-solid fa-arrow-right"></div>
+            </a>
+        
+    </div>
+
+</main>
+
+	
+<footer>
+    <div class="footer-content">
+        <p>2023 Gozea</p>
+        <p>Powered by Hugo</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

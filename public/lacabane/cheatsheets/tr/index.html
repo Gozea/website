@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>tr | Gozea</title>
+
+    
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    
+    
+    
+        <script defer src="/js/app.js"></script>
+    
+    <script src="https://kit.fontawesome.com/1888aefbfa.js" crossorigin="anonymous"></script>
+
+	</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <ul id="main-menu">
+      <li>
+        <a href="https://gozea.netlify.app/">Le Salon</a>
+      </li>
+      
+      <li>
+          <a href="https://gozea.netlify.app/lacabane/">La Cabane</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<main class="single-template">
+    <h1 class="title">tr</h1>
+
+    <a class="go-back" href=https://gozea.netlify.app/lacabane/cheatsheets/>
+        <div class="fa-solid fa-arrow-turn-down fa-rotate-90"></div>
+        <div>Cheatsheets</div>
+    </a>
+
+    <div class="article-content">
+        <h2 id="translate">Translate</h2>
+<p>Replace characters from first field by mapped one in second field</p>
+<p><code>echo &quot;h3ll0 w0rld&quot; | tr '30' 'eo'</code>
+<code>&gt;hello world</code></p>
+<p>Change lower case to upper case</p>
+<p><code>echo &quot;hello world&quot; | tr  '[:lower:]' '[:upper:]&quot;</code>
+<code>&gt;HELLO WORLD</code></p>
+<h2 id="delete">Delete</h2>
+<p>Delete all characters in the field</p>
+<p><code>echo &quot;hetlloy wporlda&quot; | tr -d 'typa'</code>
+<code>&gt;hello world</code></p>
+<p>Delete all characters except the ones in the field</p>
+<p><code>echo &quot;hetlloy wporlda&quot; | tr -cd 'helowrld'</code>
+<code>&gt;hello world</code></p>
+<p>Only keep printable characters</p>
+<p><code>echo �렃hello world렃&quot; | tr -cd '[:print:]'</code></p>
+<h2 id="squeeze-characters-in-field">Squeeze characters in field</h2>
+<p>Keep only one characters when several identical ones are next to each other</p>
+<p><code>echo &quot;hellooooooooooooo       woooooorld&quot; | tr -s &quot;o &quot;</code>
+<code>&gt;hello world</code></p>
+
+    </div>
+
+    <div class="other-articles">
+        
+            <a class="prev" href="https://gozea.netlify.app/lacabane/cheatsheets/cut/">
+                <div class="fa-solid fa-arrow-left"></div>
+                <div>cut</div>
+            </a>
+        
+        
+    </div>
+
+</main>
+
+	
+<footer>
+    <div class="footer-content">
+        <p>2023 Gozea</p>
+        <p>Powered by Hugo</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

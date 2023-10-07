@@ -60,6 +60,12 @@ body = "Some subquests I completed"
     link = "https://github.com/Gozea/donutcpp"
     gif = "gif/donutcpp.gif"
 
+  [[params.subquests.sub]]
+    title = "Danmaku"
+    description = "A danmaku project game made with friends"
+    link = "https://github.com/Gozea/Danmaku"
+    gif = "gif/snd_demo.gif"
+
 [params.resume]
 title = "Want to meet with the owner ?"
 charactersheettext = "His character sheet is available here !"

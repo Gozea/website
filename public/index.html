@@ -17,7 +17,7 @@
     
     <script src="https://kit.fontawesome.com/1888aefbfa.js" crossorigin="anonymous"></script>
 
-	<link rel="alternate" type="application/rss+xml" href="https://example.org/index.xml" title="Gozea" />
+	<link rel="alternate" type="application/rss+xml" href="https://gozea.netlify.app/index.xml" title="Gozea" />
 	</head>
 
 <body>
@@ -26,11 +26,11 @@
   <nav class="site-nav">
     <ul id="main-menu">
       <li>
-        <a href="https://example.org/">Le Salon</a>
+        <a href="https://gozea.netlify.app/">Le Salon</a>
       </li>
       
       <li>
-          <a href="https://example.org/lacabane/">La Cabane</a>
+          <a href="https://gozea.netlify.app/lacabane/">La Cabane</a>
       </li>
       
     </ul>
@@ -46,7 +46,7 @@
     <p class="hidden">Welcome here<br />Make yourself at home<br /></p>
     
 		<ul class="actions special">
-          <li><button  id="decoration" class="button" onclick="addDecoration()">Add some decorations</li>
+          <li><button  id="decoration" class="button scale-on-hover gradient-on-hover" onclick="addDecoration()">Add some decorations</li>
 		</ul>
     
 	</div>
@@ -64,7 +64,7 @@
 
 <section id="blog-list">
     
-        <section class="subject hidden">
+        <section class="subject hidden fade-on-hover">
             <a href=/lacabane/stories>
                 <div>
                     <h2>Stories</h2>
@@ -73,7 +73,7 @@
             </a>
         </section>
     
-        <section class="subject hidden">
+        <section class="subject hidden fade-on-hover">
             <a href=/lacabane/cheatsheets>
                 <div>
                     <h2>Cheatsheets</h2>
@@ -82,7 +82,7 @@
             </a>
         </section>
     
-        <section class="subject hidden">
+        <section class="subject hidden fade-on-hover">
             <a href=/lacabane/references>
                 <div>
                     <h2>Reference</h2>
@@ -101,7 +101,7 @@
         <ul id="quest-list">
             
                 <a href="https://github.com/Gozea/Raycaster">
-                    <li  class="hidden" style="background-image: url(gif/raycaster.gif");>
+                    <li  class="hidden fade-on-hover" style="background-image: url(gif/raycaster.gif");>
                         <div class="sub">
                             <h3>Raycaster</h3>
                             <p>A simple raycaster in c&#43;&#43;</p>
@@ -110,7 +110,7 @@
                 </a>
             
                 <a href="https://github.com/Gozea/Metaballs">
-                    <li  class="hidden" style="background-image: url(gif/metaballs.gif");>
+                    <li  class="hidden fade-on-hover" style="background-image: url(gif/metaballs.gif");>
                         <div class="sub">
                             <h3>Metaballs</h3>
                             <p>Drawing metaballs using the marching square algorithm</p>
@@ -119,10 +119,19 @@
                 </a>
             
                 <a href="https://github.com/Gozea/donutcpp">
-                    <li  class="hidden" style="background-image: url(gif/donutcpp.gif");>
+                    <li  class="hidden fade-on-hover" style="background-image: url(gif/donutcpp.gif");>
                         <div class="sub">
                             <h3>Donut.cpp</h3>
                             <p>The famous donut.c in C&#43;&#43; and with a controllable camera</p>
+                        </div>
+                    </li>
+                </a>
+            
+                <a href="https://github.com/Gozea/Danmaku">
+                    <li  class="hidden fade-on-hover" style="background-image: url(gif/snd_demo.gif");>
+                        <div class="sub">
+                            <h3>Danmaku</h3>
+                            <p>A danmaku project game made with friends</p>
                         </div>
                     </li>
                 </a>
@@ -138,15 +147,15 @@
         <div class="resume-content">
             <div class="charactersheet">
                 <h3>His character sheet is available here !</h3>
-                <button id="sheet" class="hidden">
+                <button id="sheet" class="hidden scale-on-hover">
                     <a href=/CV2023.pdf>Resume</a>
                 </button>
             </div>
             <div class="social">
                 <h3>Find my social media here</h3>
                 <div class="icons">
-                    <a class="fa-brands fa-github fa-2xl hidden" href=https://github.com/Gozea></a>
-                    <a class="fa-brands fa-linkedin fa-2xl hidden" href=https://www.linkedin.com/in/rapha%C3%ABl-bournet-695a98183/></a>
+                    <a class="fa-brands fa-github fa-2xl hidden scale-on-hover" href=https://github.com/Gozea></a>
+                    <a class="fa-brands fa-linkedin fa-2xl hidden scale-on-hover" href=https://www.linkedin.com/in/rapha%C3%ABl-bournet-695a98183/></a>
                 </div>
             </div>
         </div>
